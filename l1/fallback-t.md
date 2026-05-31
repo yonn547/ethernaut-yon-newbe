@@ -79,11 +79,9 @@ function getContribution() public view returns (uint256) {
 function withdraw() public onlyOwner {
     payable (owner).transfer(address(this).balance);
 }
-receive() external payable {
-    require(msg.value > 1000 ether && contributions[msg.sender] > 1000 ether );
-    owner = msg.sender;
- }
+receive() external payable { }
 }
 
-Fix: ubah kondisi di receive() dari > 0 menjadi 1000 ether 
-karena agar syarat menjadi owner lebih susah
+Fix: hapus logika pengubahan owner dari receive() karena 
+receive() seharusnya hanya menerima ETH, bukan mengubah 
+state penting seperti ownership contract.

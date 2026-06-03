@@ -7,7 +7,7 @@ namun ada yang membuat perhatian ku karena setelah ku coba rewrite tidak dapat d
 ### Vulnerability
 Nama: swc-101
 Penjelasan:tx.oInteger Overflow and Underflow
-Overflow/underflow terjadi ketika operasi aritmatika mencapai ukuran maksimum atau minimum suatu tipe. Misalnya jika suatu bilangan disimpan dalam tipe uint8, artinya bilangan tersebut disimpan dalam 8 bit bilangan tak bertanda tangan yang berkisar antara 0 hingga 2^8-1. Dalam pemrograman komputer, luapan bilangan bulat terjadi ketika operasi aritmatika mencoba membuat nilai numerik yang berada di luar rentang yang dapat direpresentasikan dengan jumlah bit tertentu – yang lebih besar dari nilai maksimum atau lebih rendah dari nilai minimum yang dapat direpresentasikan.
+Overflow/underflow terjadi ketika operasi aritmatika mencapai ukuran maksimum atau minimum suatu tipe. Misalnya jika suatu bilangan disimpan dalam tipe uint8, artinya bilangan tersebut disimpan dalam 8 bit bilangan tak bertanda tangan yang berkisar antara 0 hingga 2^8-1. Dalam pemrograman komputer, luapan bilangan bulat terjadi ketika operasi aritmatika mencoba membuat nilai numerik yang berada di luar rentang yang dapat direpresentasikan dengan jumlah bit tertentu – yang lebih besar dari nilai maksimum atau levbih rendah dari nilai minimum yang dapat direpresentasikan.
 
 
 

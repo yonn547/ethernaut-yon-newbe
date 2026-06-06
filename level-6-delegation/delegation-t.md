@@ -6,10 +6,11 @@ pad contract ini aku membancanya ada 2 sontract pada satu file yang pertama cont
 
 ### Vulnerability
 Nama: swc-112
-Penjelasan:tx.oInteger Overflow and Underflow
-Overflow/underflow terjadi ketika operasi aritmatika mencapai ukuran maksimum atau minimum suatu tipe. Misalnya jika suatu bilangan disimpan dalam tipe uint8, artinya bilangan tersebut disimpan dalam 8 bit bilangan tak bertanda tangan yang berkisar antara 0 hingga 2^8-1. Dalam pemrograman komputer, luapan bilangan bulat terjadi ketika operasi aritmatika mencoba membuat nilai numerik yang berada di luar rentang yang dapat direpresentasikan dengan jumlah bit tertentu – yang lebih besar dari nilai maksimum atau levbih rendah dari nilai minimum yang dapat direpresentasikan.
-
-
+Penjelasan:Penggunaan delegatecall ke contract eksternal yang 
+tidak terpercaya memungkinkan contract target mengeksekusi 
+code arbitrary dalam konteks storage contract pemanggil. 
+Ini bisa dimanfaatkan untuk mengubah state penting seperti 
+owner tanpa otorisasi.
 
  
 ### Impact
